@@ -17,7 +17,7 @@ body{
     /*background-image: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%), url('img/hero-img.png');*/
     background-image: linear-gradient(to right,rgba(52, 36, 161, 0.8) 0%,rgba(170, 86, 200, 0.8) 100%), url('img/hero-img.png');
     width: 100%;
-    height: 600px;
+    height: 100vh;
     display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,8 +36,8 @@ body{
 .logo img{
     display: inline-block;
     text-align: center;
-    margin: 0 15px;
-    padding-left: 80px;
+    margin: 0 35px;
+    padding-left: 20px;
 }
 
 .logo a{
@@ -82,22 +82,30 @@ body{
 
 .menu-box ul li a:hover{
     color: black;
+    transition: ease-in 0.7s;
 }
 
 .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     color: white;
 }
 
 .heading h4{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
+    line-height: 0%;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .heading h1{
-    font-size: 120px;
+    font-size: 170px;
     font-weight: 100;
 }
 
@@ -115,9 +123,13 @@ body{
 .header-area .button:hover{
     color:blueviolet;
     background-color: whitesmoke;
+    border: 2px solid blueviolet;
 }
 
 /* Second Section*/
+.reasons{
+    height: 100vh;
+}
 
 .reasons a.button{
     /*background-color: blueviolet; */
@@ -173,15 +185,25 @@ body{
     background-image: url('img/notebook.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     width: 100%;
     color: black;
     border-top: 5px solid blueviolet;
     border-bottom: 5px solid rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .reasons-right .flex-right{
-    margin-top: 50px;
+    text-align: right;
+    /*margin-top: 50px; */
     padding: 10px;
     flex: 50%;
 }
@@ -192,12 +214,13 @@ body{
 }
 
 .reasons-right .flex-right h1 {
-    margin-top: 100px;
+   /* margin-top: 100px; */
     font-size: 45px;
     line-height: 47px;
     margin-bottom: 25px;
-    border-left: 5px solid black;
-    padding-left: 15px;
+    border-right: 5px solid black;
+    padding-right: 15px;
+    margin-right: 100px;
 }
 
 .flex-right h1 span {
@@ -213,17 +236,17 @@ body{
 .flex-right a.button{
     color: black;
     border: 2px solid black;
+    margin-right: 100px;
 }
 
 .flex-right a.button:hover {
     border: 2px solid blueviolet;
     transition: ease-in-out .7s;
-    background-color: rgb(219, 217, 215);
+    background-color: rgb(255, 255, 255);
 }
 
 .flex-right .button:hover i{
     color: blueviolet;
-
 }
 
 
@@ -238,10 +261,10 @@ body{
 
 .contact-box{
     width: 600px;
-    height: 720px;
-    margin: 100px 100px;
+    height: 100%;
+    margin: 50px 100px;
     background-color:#A26BC7;
-    padding: 35px 20px;
+    padding: 35px 50px;
 }
 
 .contact-box h1{
@@ -261,30 +284,8 @@ body{
 
 .contact-left-side img{
     width: 650px;
-
-}
-/*
-input[type="text"], input[type="email"], input[type=text] {
-    font-family: 'Poppins', sans-serif;
-    margin: 10px;
-    padding: 10px;
-    width: 250px;
-    font-size: 16px;
-    border: 0;
-    border-radius: 20px;
-    padding-left: 20px;
 }
 
-textarea {
-    font-family: 'Poppins', sans-serif;
-    width: 523px;
-    height: 170px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 15px;
-}
-*/
 input[type=submit]{
     font-family: 'Poppins', sans-serif;
     margin: 10px;
@@ -298,6 +299,7 @@ input[type=submit]{
     border-radius: 20px;
     cursor: pointer;
 }
+
 input[type=submit]:hover {
     background-color:  #6c1dcc;
   }
@@ -325,4 +327,9 @@ input[type=text], textarea {
     text-align: center;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.footer-tex span{
+    font-weight: 600;
+    color: yellow;
 }
