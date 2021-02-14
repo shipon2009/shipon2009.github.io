@@ -60,7 +60,7 @@ body{
 }
 
 .menu-box{
-    margin: 35px;
+    margin: 20px 50px;
 }
 
 .menu-box ul{
@@ -70,7 +70,7 @@ body{
 }
 
 .menu-box ul li{
-    padding: 0 20px;   
+    padding: 0 10px;   
 }
 
 .menu-box ul li a{
@@ -78,19 +78,34 @@ body{
     color:white;
     font-weight: 400;
     text-decoration: none;
+    padding: 10px;
 }
 
 .menu-box ul li a:hover{
     color: black;
+    font-weight: 400;
     transition: ease-in 0.7s;
+    /*background-color: whitesmoke; */
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.menulink span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menulink:hover span{
+    color: white;
+    
 }
 
 .heading{
-    display: flex;
+/*    display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
     margin-top: 150px;
     color: white;
@@ -125,10 +140,17 @@ body{
     background-color: whitesmoke;
     border: 2px solid blueviolet;
 }
+/*    letter-spacing: 1px; */
+/*    background: linear-gradient(to left, #ff0000 50%, #0000ff 50%); */
+
 
 /* Second Section*/
 .reasons{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .reasons a.button{
@@ -142,19 +164,26 @@ body{
     color: white;
 }
 
-.flex-container {
+.reasons .flex-container {
     display: flex;
     align-items: center;
-  }
+    justify-content: space-between;
+}
 
+.reasons .flex-right{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .reasons .flex-right img{
-    width: 600px;
+    width: 70%;
     height: auto;
-    margin: 100px 100px 100px 0;
-    
 }
 
 .reasons .flex-left{
+    flex: 50%;
     margin: 0 0 0 100px;
     padding: 45px 0;
 }
@@ -182,11 +211,11 @@ body{
 /*Third Section*/
 
 .reasons-right{
-    background-image: url('img/notebook.jpeg');
+    background-image: url('img/4926119.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     color: black;
     border-top: 5px solid blueviolet;
     border-bottom: 5px solid rgb(216, 216, 216);
@@ -203,7 +232,6 @@ body{
 
 .reasons-right .flex-right{
     text-align: right;
-    /*margin-top: 50px; */
     padding: 10px;
     flex: 50%;
 }
@@ -214,7 +242,6 @@ body{
 }
 
 .reasons-right .flex-right h1 {
-   /* margin-top: 100px; */
     font-size: 45px;
     line-height: 47px;
     margin-bottom: 25px;
@@ -251,6 +278,10 @@ body{
 
 
 /*contact-area*/
+.contact-area{
+    width: 100%;
+    height: 100vh;
+}
 
 .box-container{
     display: flex;
@@ -263,22 +294,24 @@ body{
     width: 600px;
     height: 100%;
     margin: 50px 100px;
-    background-color:#A26BC7;
+    background-color:whitesmoke;
     padding: 35px 50px;
+    box-shadow: 0px 5px 20px #12172d;
 }
 
-.contact-box h1{
+.contact-left-side h1{
     font-size: 25px;
     font-weight: 600;
 }
 
-.contact-box h4{
+.contact-left-side h4{
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 20px;
+    margin-bottom: 50px;
 }
-.contact-box h1 span{
-    color: white;
+.contact-left-side h1 span{
+    color: blueviolet;
     font-weight: 600;
 }
 
@@ -302,6 +335,8 @@ input[type=submit]{
 
 input[type=submit]:hover {
     background-color:  #6c1dcc;
+    box-shadow: 0px 0px 10px #12172d;
+    transition: ease-out 0.5s;
   }
 
 input[type=text], textarea {
@@ -333,3 +368,44 @@ input[type=text], textarea {
     font-weight: 600;
     color: yellow;
 }
+
+.footer-tex a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.footer-area a:hover{
+    color: white;
+}
+
+
+
+/*****************************/
+/* copy from w3 school */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:blueviolet; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 50px;
+    height: 50px;
+   
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    box-shadow: 0 0 10px gray;
+  }
+
+
+  /*** extra add subscribe css **/

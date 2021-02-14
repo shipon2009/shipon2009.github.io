@@ -10,6 +10,8 @@
     
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
     <section class="header-area" id="header-area">
         <div class="container">
             <div class="logo">
@@ -17,15 +19,15 @@
             </div>
             <div class="menu-box">
                 <ul>
-                    <li><a href="#header-area" class="menulink">Home</a></li>
-                    <li><a href="#reasons" class="menulink">Service</a></li>
-                    <li><a href="#reasons-right" class="menulink">About</a></li>
-                    <li><a href="#contact" class="menulink">Contact</a></li>
+                    <li><a href="#header-area" class="menulink"><span>H</span>ome</a></li>
+                    <li><a href="#reasons" class="menulink"><span>S</span>ervice</a></li>
+                    <li><a href="#reasons-right" class="menulink"><span>A</span>bout</a></li>
+                    <li><a href="#contact" class="menulink"><span>C</span>ontact</a></li>
                 </ul>
             </div> 
         </div>
-        <div class="heading center">
-            <h4>You best partner</h4>
+        <div class="heading">
+            <h4>Your best partner</h4>
             <h1>Pemodule</h1>
             <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a>
         </div>
@@ -40,7 +42,7 @@
                 <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="flex-right">
-                <img src="img/imgs.jpg" alt="">
+                <img src="img/imgs.jpg" alt="imgs1">
             </div>
         </div>
     </section>
@@ -55,14 +57,14 @@
                 <div class="flex">
                 <h1>Reasone To <br><span>Choose</span> Notebook</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi excepturi error minus, eos incidunt numquam nesciunt qui sed dolore explicabo alias provident atque rem suscipit, perferendis quo, eveniet non! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a> 
                 </div>
             </div>
         </div>
     </section>
 
 <!--Contact Section Markup-->
-
+<!--
     <section class="contact-area" id="contact">
         <div class="box-container">
             <div class="contact-left-side">
@@ -85,11 +87,59 @@
             </div> 
         </div>
     </section>
+-->
+    <section class="contact-area" id="contact">
+        <div class="box-container">
+            <div class="contact-left-side">
+                <h1><span>Contact</span> With Us</h1>
+                <h4> Should you ever need anything, <br> please don't hesitate to contact with us.</h4>
+                <img src="img/Flockmail.gif" alt="img3">
+            </div>
+
+            <div class="contact-right-side">
+                <div class="contact-box">
+                    <form action="#">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input type="text" id="phone" name="phone" placeholder="You Mobile Number">
+                        <input type="text" id="email" name="email"  placeholder="Enter your email">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </section>
 <!--Fotter Area-->
     <section class="footer-area">
         <div class="footer-tex">
-            Copyright &copy; 2021. All right reseverd by <span> <i class="fas fa-heartbeat"></i> Ahmed Shipon <i class="fas fa-heartbeat"></i></span>
+            Copyright &copy; 2021. All right reseverd by <span> <i class="fas fa-heartbeat"></i> <a href="#">Ahmed Shipon</a> <i class="fas fa-heartbeat"></i></span>
         </div>
     </section>
+
+<!--Js Script-->
+
+<script>
+        //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
 </body>
 </html>
