@@ -1,145 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemodule | Ahmed Shipon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>AppLab : PSD To HTML</title>
     <script src="https://kit.fontawesome.com/dc34afbe78.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/monitor.png" type="image/x-icon">
     
 </head>
+
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-
-    <section class="header-area" id="header-area">
-        <div class="container">
+    <header>
+        <div class="container flex justify-between align-center">
             <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><span>APP</span>LAB</a>
             </div>
-            <div class="menu-box">
+            <nav class="flex justify-between align-center">
                 <ul>
-                    <li><a href="#header-area" class="menulink"><span>H</span>ome</a></li>
-                    <li><a href="#reasons" class="menulink"><span>S</span>ervice</a></li>
-                    <li><a href="#reasons-right" class="menulink"><span>A</span>bout</a></li>
-                    <li><a href="#contact" class="menulink"><span>C</span>ontact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Key Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testiminial</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
-            </div> 
+                <button class="btn btn-primary">Try for free</button>
+            </nav>
         </div>
-        <div class="heading">
-            <h4>Your best partner</h4>
-            <h1>Pemodule</h1>
-            <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a>
+    </header>
+
+    <!-- <section class="floating-button">
+        <div class="btn-cart">
+            <a href="#">
+                <div class="count-wrapper">
+                    <img src="./img/01.jpg" alt="flot" class="float-img" >
+                    <div class="js-quantity">0</div>
+                    <p class="js-amount">Tk. 0</p>
+                </div>
+            </a>
+        </div>
+
+    </section> -->
+
+    <section class="hero-area flex align-center">
+        <div class="container flex flex-1">
+            <div class="hero-text-area">
+                <div class="sub-tex flex align-center">
+                    <i class="far fa-check-circle"></i>
+                    <p># 1 Editiors Choice App of 2021</p>
+                </div>
+                <h1>Best app for your <br/> modern lifestyle</h1>
+                <p>Increase productivity with a simple to-do app. <br/> app for managing your personal budgets.</p>
+                <button class="btn btn-primary">Try for free</button>
+                <a href="#">Watch demo video</a>
+            </div>
         </div>
     </section>
 
-<!--Second Section Reasons-->
-    <section class="reasons" id="reasons">
-        <div class="flex-container">
-            <div class="flex-left">
-                <h1>Reasone To <br><span>Choose</span> Notebook</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi excepturi error minus, eos incidunt numquam nesciunt qui sed dolore explicabo alias provident atque rem suscipit, perferendis quo, eveniet non! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a>
+    <section class="companis">
+        <div class="container">
+            <div class="companiy-heading">
+                <h4>Trusted by companies like</h4>
             </div>
-            <div class="flex-right">
-                <img src="img/imgs.jpg" alt="imgs1">
+            <div class="tested-company flex">
+                <img src="./img/01.jpg" alt="1">
+                <img src="./img/01.jpg" alt="1">
+                <img src="./img/01.jpg" alt="1">
+                <img src="./img/01.jpg" alt="1">
             </div>
         </div>
     </section>
 
-<!--Reason Section Markup-->
-    <section class="reasons-right" id="reasons-right">
-        <div class="flex-container2">
-            <div class="flex-left">
-                
+    <section class="features">
+        <div class="container flex justify-center align-center">
+            <div class="left-section flex-1">
+                <img src="./img/phone.png" alt="">
             </div>
-            <div class="flex-right">
-                <div class="flex">
-                <h1>Reasone To <br><span>Choose</span> Notebook</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi excepturi error minus, eos incidunt numquam nesciunt qui sed dolore explicabo alias provident atque rem suscipit, perferendis quo, eveniet non! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="button">Get Started <i class="fas fa-arrow-right"></i></a> 
+            <div class="right-section flex-1">
+                <h2>Awesome apps features</h2>
+                <p>Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
+                <div class="feature-icon flex align-center">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">Fast Performance</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon flex align-center">
+                    <div class="icons">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="proto">Prototyping</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon flex align-center">
+                    <div class="icons">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="vector">Vector Editing</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="jackpots">
+        <div class="container">
+            <div class="jackpots-title flex justify-between align-center">
+                <div class="left-section flex flex-1">
+                    <h1>Smart jackpots that you may love this anytime & anywhere</h1>
+                </div>
+                <div class="right-section flex flex-1">
+                    <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+                </div>
+            </div>
+
+            <div class="row flex">
+                <div class="feature-icon flex">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">Automatic Payouts</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon flex">
+                    <div class="icons">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="proto">Network Effect</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon flex">
+                    <div class="icons">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="vector">Bigger Rewards Method</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!--Contact Section Markup-->
-<!--
-    <section class="contact-area" id="contact">
-        <div class="box-container">
-            <div class="contact-left-side">
-                <img src="img/Flockmail.gif" alt="img3">
+    <section class="design-code section-padding">
+        <div class="container flex align-center flex-reverse ">
+            <div class="hero-text-area flex-1">
+                <!-- <div class="sub-tex flex align-center">
+                    <i class="fab fa-500px"></i> 
+                    <p># 1 Editiors Choice App of 2021</p>
+                </div> -->
+                <h1>Designed & built by the latest code integration</h1>
+                <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="right-box flex justify-center flex-1">
+                <img src="./img/code.png" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="app-area section-padding">
+        <div class="container">
+            <div class="app-area-title">
+                <h1>Why you should choose <br /> our app</h1>
+                <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
             </div>
 
-            <div class="contact-right-side">
-                <div class="contact-box">
-                    <h1><span>Contact</span> With Us</h1>
-                    <h4> Should you ever need anything, <br> please don't hesitate to contact me.</h4>
-                    <form action="#">
-                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <input type="text" id="phone" name="phone" placeholder="You Mobile Number">
-                        <input type="text" id="email" name="email"  placeholder="Enter your email">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
+            <div class="row">
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">Automatic Payouts</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
                 </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="proto">Network Effect</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="vector">Bigger Rewards Method</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">Automatic Payouts</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="proto">Network Effect</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="vector">Bigger Rewards Method</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Ultimate-features section-padding">
+        <div class="container">
+            <div class="features-title">
+                <h1>Ultimate features <br />that we built</h1>
+                <p>The rise of mobile devices transforms the way we <br /> consume information entirely.</p>
+            </div>
+
+            <div class="row">
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">App Development</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="proto">UX Planing</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="vector">Cloud Storage</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+                <div class="feature-icon">
+                    <div class="icons">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="fast">Customer support</h3>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">See all</button>
+        </div>
+
+    </section>
+    <!-- awesome feature start-->
+ 
+   
+    <section class="awesome-features section-padding">
+        <div class="container">
+            <div class="features-title">
+                <h1>Get awesome features, without<br/>extra charges</h1>
+                <p>The rise of mobile devices transforms the way we consume information entirely <br /> and the world's most elevant channels such as Facebook.</p>
+            </div>
+            <div class="tab-container flex justify-center pdt-50">
+                <div class="tab-slider--nav flex justify-center">
+                    <ul class="tab-slider--tabs">
+                        <li class="tab-slider--trigger active" rel="tab1">Monthly</li>
+                        <li class="tab-slider--trigger" rel="tab2">Anually</li>
+                    </ul>
+                </div>
+            </div>
+           <div class="price-card-area flex justify-center">
+                <div id="tab1" class="tab-slider--body flex justify-center">
+                    <div class="single-card">
+                        <div class="price-area">
+                            <h1 class="price">$0<span>/month</span></h1>
+                            <h2>Business Class</h2>
+                            <p>For small teams or office</p>
+                        </div>
+                        <ul>
+                            <li> Drag & Drop Builder </li>
+                            <li> 1,000's of Templates </li>
+                            <li> Blog Support Tools </li>
+                            <li> eCommerce Store </li>
+                        </ul>
+                        <button class="btn btn-primary">Start free trail</button>
+                    </div>
+
+                    <div class="single-card">
+                        <div class="price-area">
+                            <h1 class="price">$99<span>/month</span></h1>
+                            <h2>Pro Master</h2>
+                            <p>For Best opportunities</p>
+                        </div>
+                        <ul>
+                            <li> Drag & Drop Builder </li>
+                            <li> 1,000's of Templates </li>
+                            <li> Blog Support Tools </li>
+                            <li> eCommerce Store </li>
+                        </ul>
+                        <button class="btn btn-primary">Subscribe Now</button>
+                        <br>
+                        <a class="trail" href="#">Or Start 14 days trailr</a>
+                    </div>
+                </div>
+
+                <div id="tab2" class="tab-slider--body flex justify-center">
+                    <div class="single-card">
+                        <div class="price-area">
+                            <h1 class="price">$199<span>/year</span></h1>
+                            <h2>Business Class</h2>
+                            <p>For small teams or office</p>
+                        </div>
+                        <ul>
+                            <li> Drag & Drop Builder </li>
+                            <li> 1,000's of Templates </li>
+                            <li> Blog Support Tools </li>
+                            <li> eCommerce Store </li>
+                        </ul>
+                        <button class="btn btn-primary">Subscribe Now</button>
+                    </div>
+
+                    <div class="single-card">
+                        <div class="price-area">
+                            <h1 class="price">$299<span>/year</span></h1>
+                            <h2>Pro Master</h2>
+                            <p>For Best opportunities</p>
+                        </div>
+                        <ul>
+                            <li> Drag & Drop Builder </li>
+                            <li> 1,000's of Templates </li>
+                            <li> Blog Support Tools </li>
+                            <li> eCommerce Store </li>
+                        </ul>
+                        <button class="btn btn-primary">Subscribe Now</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="testimonial-area section-padding">
+        <div class="container flex align-center">
+            <div class="left-col">
+                <div class="client-bd">
+                    <img src="./img/phone2.png" alt="">
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="features-title">
+                    <h1>Meet Client Satisfaction<br/>by using product</h1>
+                    <p>The rise of mobile devices transforms the way we consume.<br/>elevant channels such as Facebook.</p>
+                </div>
+                <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="testimonial-carousel">
+                    <div class="button-btn">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i></button> |
+                    <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="slider-area">
+                        <div class="single-slide">
+                            <h2>User friendly & Customizable:1.0</h2>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+                            <div class="carousel-title-area">
+                                <div class="client-pic">
+                                    <img src="./img/team01.jpg" class="client">
+                                </div>
+                                <div class="cname">
+                                    <h3>Zoltan Nemeth</h3>
+                                    <h4>CEO of Pixler Lab</h4>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <h2>User friendly & Customizable:2.0</h2>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+                            <div class="carousel-title-area">
+                                <div class="client-pic">
+                                    <img src="./img/team02.jpeg" class="client">
+                                </div>
+                                <div class="cname">
+                                    <h3>Zoltan Nemeth</h3>
+                                    <h4>CEO of Pixler Lab</h4>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <h2>User friendly & Customizable:3.0</h2>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+                            <div class="carousel-title-area">
+                                <div class="client-pic">
+                                    <img src="./img/team03.png" class="client">
+                                </div>
+                                <div class="cname">
+                                    <h3>Zoltan Nemeth</h3>
+                                    <h4>CEO of Pixler Lab</h4>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feq-area section-padding">
+        <div class="container">
+            <div class="feq-box">
+            <button type="button" class="collapsible">How to contact with riders emergency?</button>
+            <div class="content">
+              <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+            </div>
+            <button type="button" class="collapsible">App installation failed, how to update system information?</button>
+            <div class="content">
+              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            </div>
+            <button type="button" class="collapsible">Website reponse taking time, how to improve?</button>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat corrupti, fugit nemo, quae optio voluptates veritatis nesciunt excepturi temporibus quibusdam cupiditate vero fuga nisi incidunt natus eligendi atque voluptatibus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat corrupti, fugit nemo, quae optio voluptates veritatis nesciunt excepturi temporibus quibusdam cupiditate vero fuga nisi incidunt natus eligendi atque voluptatibus?</p>
+            </div>
+            <button type="button" class="collapsible">New update fixed all bug and issues</button>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat corrupti, fugit nemo, quae optio voluptates veritatis nesciunt excepturi temporibus quibusdam cupiditate vero fuga nisi incidunt natus eligendi atque voluptatibus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat corrupti, fugit nemo, quae optio voluptates veritatis nesciunt excepturi temporibus quibusdam cupiditate vero fuga nisi incidunt natus eligendi atque voluptatibus?</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="cta-area section-padding">
+        <div class="container">
+            <div class="cta-title">
+                <h1>Download our App now !</h1>
+                <p>The rise of mobile devices transforms the way we consume information entirely <br/> and the world's most elevant channels such as Facebook.</p>
+            </div>
+            <div class="app-logo">
+                <a href="#"><img src="./img/play.png" alt="play"></a>
+                <a href="#"><img src="./img/ios.png" alt="ios"></a>
             </div> 
         </div>
     </section>
--->
-    <section class="contact-area" id="contact">
-        <div class="box-container">
-            <div class="contact-left-side">
-                <h1><span>Contact</span> With Us</h1>
-                <h4> Should you ever need anything, <br> please don't hesitate to contact with us.</h4>
-                <img src="img/Flockmail.gif" alt="img3">
-            </div>
-
-            <div class="contact-right-side">
-                <div class="contact-box">
-                    <form action="#">
-                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <input type="text" id="phone" name="phone" placeholder="You Mobile Number">
-                        <input type="text" id="email" name="email"  placeholder="Enter your email">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
+    
+    <section class="footer-area section-padding">
+        <footer>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><span>App</span>Lab</a>
                 </div>
-            </div> 
-        </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Key Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testiminial</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-slack-hash"></i></a>
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                </div>
+                <div class="copyright">
+                   <p>Copyright &copy; Ahemd Shipon 2021. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
     </section>
-<!--Fotter Area-->
-    <section class="footer-area">
-        <div class="footer-tex">
-            Copyright &copy; 2021. All right reseverd by <span> <i class="fas fa-heartbeat"></i> <a href="#">Ahmed Shipon</a> <i class="fas fa-heartbeat"></i></span>
-        </div>
-    </section>
 
-<!--Js Script-->
-
-<script>
-        //Get the button:
-    mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-</script>
-
+<!--    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  --> 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
