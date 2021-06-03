@@ -15,7 +15,67 @@
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
+    html,body{
+        overflow-x: hidden;
+    }
     
+    .sub-header{
+        display: none;
+    }
+    .header{
+        margin-top: 20px;
+    }
+    .box-boder{
+        border-right: none;
+    }
+    .content-text{
+        display: block;
+        width: 100%;
+        color: #fff;
+        padding: 10px 10px;
+    }
+    .content-text h4{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .content-text p{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .social-area{
+        padding: 5px 5px;
+        height: auto;
+    }
+    .pro-gal-area{
+        column-count: 2;
+        column-gap: 1em;
+    }
+    
+    .product-img img{
+        background-color: #eee;
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+    }
+    .testimonial-slider .single-slides{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    input[type=submit]{
+        right: 45px;
+    }
+
+    .sub-footer .col-md-6{
+        text-align: center;
+    }
+
+    .social-like{
+        margin-top: 20px;
+    }
+    .social-icon{
+        font-size: 20px;
+    }
     
 }
 /* Wide Mobile Layout: 480px. */

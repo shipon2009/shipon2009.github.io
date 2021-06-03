@@ -165,7 +165,6 @@ body{
     position: absolute;
     bottom: 6px;
     right: 10px;
-
 }
 
 .slide-area .owl-nav {
@@ -227,8 +226,8 @@ body{
     font-weight: 600;
 }
 .left-col{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -272,7 +271,7 @@ body{
     height: 2px;
     position: relative;
     vertical-align: middle;
-    width: 30%;
+    width: 40%;
     bottom: 42px;
   }
 
@@ -311,7 +310,7 @@ body{
     align-items: center;
     font-size: 30px;
     color: steelblue;
-    /* border-right: 2px solid #808080; */
+    border-right: 2px solid #808080;
 }
 
 .social-icon i{
