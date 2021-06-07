@@ -10,7 +10,11 @@
             nav:true,
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
             dots:true,
-            autoplay:false,
+            autoplay:true,
+        //    autoplayTimeout: 3500,
+        //    autoplaySpeed: 800,
+            
+        //    animateIn:'slideInLeft',
 
         });
 
@@ -46,7 +50,8 @@
             dots:true,
             items:1,
             autoplay:true,
-
+            animateIn:'zoomIn',
+            autoplayHoverPause: true,
         });
 
         // $(".pro-gal-area").masonry({
