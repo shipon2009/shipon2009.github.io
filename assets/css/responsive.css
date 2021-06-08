@@ -3,6 +3,10 @@
     .sub-header{
         font-size: 12px;
     }
+    #myBtn{
+        bottom: 90px;
+    }
+
     
 }
 /* Tablet & mobile Layout: 768px. */
@@ -14,6 +18,10 @@
         column-count: 3;
         column-gap: 1em;
     }
+    #myBtn{
+        bottom: 90px;
+    }
+
 }
 
 /* Tablet Layout: 768px. */
@@ -27,6 +35,10 @@
         column-count: 3;
         column-gap: 1em;
     }
+    #myBtn{
+        bottom: 90px;
+    }
+
     
 }
 /* Mobile Layout: 320px. */
@@ -115,7 +127,7 @@
         font-size: 30px;
     }
     #myBtn{
-        bottom: 45px;
+        bottom: 90px;
     }
 }
 /* Wide Mobile Layout: 480px. */
@@ -207,7 +219,7 @@
         font-size: 30px;
     }
     #myBtn{
-        bottom: 45px;
+        bottom: 90px;
     }
 
     
