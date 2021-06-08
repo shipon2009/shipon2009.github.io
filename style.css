@@ -113,22 +113,17 @@ body{
 }
 
 /********************/
-.navbar{
-    opacity: 0;
-}
 
 .container-fluid{
     overflow-x: hidden;
 }
-
 .single-slide{
     width: 100%;
     height: 80vh;
-    background-size: cover;
+    background-size: 100% 80vh;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .black-bg{
     position: absolute;
     width: 100%;
@@ -144,7 +139,6 @@ body{
     color: #fff;
     padding: 20px 50px;
 }
-
 .slide-area button.owl-dot {
     background: #fff;
     height: 10px;
@@ -154,19 +148,16 @@ body{
     display: inline;
     text-align: center;
 }
-
 .slide-area button.owl-dot.active{
     background: blue;
     height: 12px;
     width: 12px;
 }
-
 .slide-area .owl-dots {
     position: absolute;
     bottom: 6px;
     right: 10px;
 }
-
 .slide-area .owl-nav {
     position: absolute;
     top: 50%;
@@ -186,7 +177,6 @@ body{
     position: absolute;
     right: 10%;
 }
-
 .container-fluid{
     padding: 0 0;
 }
@@ -204,6 +194,7 @@ body{
     margin: 0 10px;
 }
 .about{
+    display: block;
     /* background: rgb(225, 227, 230); */
     background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,240,.7)), url(assets/image/16293.jpg);
     background-position: center;
@@ -224,8 +215,8 @@ body{
     font-weight: 600;
 }
 .left-col{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -308,6 +299,7 @@ body{
 }
 .social-like .social-icon{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 30px;

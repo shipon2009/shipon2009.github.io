@@ -10,7 +10,7 @@
             nav:true,
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
             dots:true,
-            autoplay:true,
+            autoplay:false,
         //    autoplayTimeout: 3500,
         //    autoplaySpeed: 800,
             
@@ -62,10 +62,10 @@
 
     });
     
-    jQuery(window).load(function(){
+    // jQuery(window).load(function(){
 
                
-    });
+    // });
 
 
     

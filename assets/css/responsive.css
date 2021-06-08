@@ -10,6 +10,10 @@
     .sub-header{
         font-size: 12px;
     }
+    .pro-gal-area{
+        column-count: 3;
+        column-gap: 1em;
+    }
 }
 
 /* Tablet Layout: 768px. */
@@ -18,6 +22,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .pro-gal-area{
+        column-count: 3;
+        column-gap: 1em;
     }
     
 }
@@ -109,7 +117,6 @@
     #myBtn{
         bottom: 45px;
     }
-    
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
@@ -202,4 +209,6 @@
     #myBtn{
         bottom: 45px;
     }
+
+    
 }
