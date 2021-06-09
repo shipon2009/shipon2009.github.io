@@ -54,7 +54,6 @@ body{
 .align-bottom{
     align-items: flex-end;
 }
-
 .slidebg-1{background:url(assets/image/slidebg1.jpg);}
 .slidebg-2{background:url(assets/image/slidebg2.jpg);}
 .slidebg-3{background:url(assets/image/slidebg3.jpg);}
@@ -62,15 +61,12 @@ body{
 .slidebg-5{background:url(assets/image/slidebg5.jpg);}
 .slidebg-6{background:url(assets/image/slidebg6.jpg);}
 /******************/
-
 .logo img{
-    width: 80px;
+    width: 35%
 }
-
 .bannar img {
     margin-bottom: 18px;
 }
-
 .content-area{
     left: 0;
     top: 0;
@@ -81,7 +77,6 @@ body{
     font-size: 30px;
     color: #ffffff;
 }
-
 .menu-bar{
     display: block;
     background: rgba(17, 13, 13, 0.788);
@@ -92,7 +87,6 @@ body{
 .menu-bar .fas{
     line-height: 50px;
 }
-
 .sub-header{
     display: flex;
     align-items: center;
@@ -102,18 +96,17 @@ body{
     font-size: 14px;
     font-weight: 500;
 }
-
 .sub-header .fas, .far, .fab{
     margin-right: 10px;
 }
-
 .sub-header a{
     text-decoration: none;
     color: #fff;
 }
-
+.header{
+    background: #c4ecf8;
+}
 /********************/
-
 .container-fluid{
     overflow-x: hidden;
 }
@@ -124,6 +117,14 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+/* header.header{
+    position: relative;
+    height: 100vh;
+}
+.content-area{
+    position: absolute;
+    z-index: -1;
+} */
 .black-bg{
     position: absolute;
     width: 100%;
@@ -202,17 +203,39 @@ body{
     background-repeat: no-repeat;
     padding-bottom: 60px;
 }
+.right-col{
+    margin-left: 15px;
+}
 .right-col p{
     font-size: 18px;
     font-weight: 300;
     color: rgb(48, 48, 48);
-    margin-left: 50px;
     text-align: center;
 }
-
-.right-col span{
+.right-col ul{
+    padding-left: 0;
+}
+.right-col ul li{
+    display: inline-block;
+    text-align: center;
+}
+.right-col .item-name i{
+    font-size: 10px;
+    text-align: center;
+    margin: 0 10px;
+    color: #717d96;
+}
+.right-col .item-name{
+    text-align: center;
+}
+.right-col .item-name span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.right-col p span{
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .left-col{
     width: 250px;
@@ -221,7 +244,6 @@ body{
     position: relative;
     overflow: hidden;
 }
-
 .left-col img{
     min-width: 100%;
     min-height: 100%;
@@ -234,19 +256,15 @@ body{
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
 }
-
 .pro-text{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
 .pro-text h4{
     text-transform: uppercase;
     height: 50px;
 }
-
 .pro-text h4 span{
     display: block;
     text-transform: capitalize;
@@ -254,7 +272,6 @@ body{
     font-weight: 400;
     margin-top: 10px;
 }
-
 .pro-text h4:after {
     background-color: #888;
     content: "";
@@ -265,7 +282,6 @@ body{
     width: 40%;
     bottom: 42px;
   }
-
 .right-col .fab{
     display: block;
     text-align: center;
@@ -273,13 +289,10 @@ body{
     margin-bottom: 25px;
     color:dimgray;
 }
-
 .box-boder{
     border-right: 2px solid rgb(204, 204, 204);
 }
-
 /* social-like css start */
-
 .social-like{
     display: block;
     position: relative;
@@ -296,6 +309,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto ;
     text-align: center;
+    /* margin: 5px 0; */
 }
 .social-like .social-icon{
     display: flex;
@@ -313,34 +327,27 @@ body{
     margin-right: 20px;
 }
 .social-icon .counter{
-    font-weight: 500;
-    
+    font-weight: 500;  
 }
-
 .social-icon .fa-facebook{
     color: #3b5998;
 }
-
 .social-icon .fa-twitter{
     color: #00acee;
 }
-
 .social-icon .fa-pinterest{
     color: #E60023;
 }
 .social-icon .fa-instagram{
     color: #8a3ab9;
 }
-
 /* social area end */
 
 /* product-glarry-start */
-
 .pro-gal-area{
     column-count: 4;
     column-gap: 1em;
 }
-
 .product-img img{
     background-color: #eee;
     display: inline-block;
@@ -351,14 +358,12 @@ body{
 .product-img:hover{
     transform: scale(1.09);
 }
-
 /* product-glarry-end */
 /* Brand-logo css start */
 
 .brand-logo{
     background: #c4ecf8;
 }
-
 .brand-logo .single-brand{
     background: #fff;
     height: 160px;
@@ -366,7 +371,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .logo-carousel{
     display: block;
     margin-bottom: 80px;
@@ -385,7 +389,6 @@ body{
 .logo-carousel:hover .owl-nav {
     opacity: .6;
 }
-
 .logo-carousel button.owl-next {
     position: absolute;
     right: 0;
@@ -441,7 +444,6 @@ body{
     height: 12px;
     width: 12px;
 }
-
 /* testimonial section end */
 
 /* footer-area-start */
