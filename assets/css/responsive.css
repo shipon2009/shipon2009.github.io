@@ -6,7 +6,9 @@
     #myBtn{
         bottom: 90px;
     }
-
+    section.body-bannar{
+        margin-top: 135px;
+    }
     
 }
 /* Tablet & mobile Layout: 768px. */
@@ -20,6 +22,13 @@
     }
     #myBtn{
         bottom: 90px;
+    }
+    section.body-bannar{
+        margin-top: 135px;
+    }
+    .single-slide{
+        position: relative;
+        height: 70vh;
     }
 
 }
@@ -62,7 +71,6 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
-
     }   
     .social-like .row {
         display: grid;
@@ -73,8 +81,14 @@
     #myBtn{
         bottom: 90px;
     }
+    section.body-bannar{
+        margin-top: 115px;
+    }
+    .single-slide{
+        position: relative;
+        height: 70vh;
+    }
 
-    
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
@@ -87,11 +101,18 @@
     .header{
         padding-top: 20px;
     }
+    section.body-bannar{
+        margin-top: 125px;
+    }
     .box-boder{
         border-right: none;
     }
     .logo img{
         width: 20%
+    }
+    .single-slide{
+        position: relative;
+        height: 45vh;
     }
     .content-text{
         display: block;
@@ -145,18 +166,18 @@
     }
     .right-col p {
         margin-left: 0;
-        font-size: 15px;
+        font-size: 16px;
     }
     .right-col ul.item-name{
-        font-size: 15px;
+        font-size: 16px;
     }
     .right-col .item-name span {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
         display: block;
     }
     .right-col .item-name i{
-        font-size: 7px;
+        font-size: 8px;
         text-align: center;
         margin: 0 8px;
         color: rgb(140, 165, 172);
@@ -183,6 +204,20 @@
     #myBtn{
         bottom: 90px;
     }
+    .about{
+        padding-top: 0;
+    }
+    .sub-footer{
+        font-size: 14px;
+    }
+    .footer-area p{
+        font-size: 16px;
+    }
+    .footer-area .head-line{
+        font-size: 18px;
+    }
+
+
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
@@ -195,11 +230,18 @@
     .header{
         padding-top: 20px;
     }
+    section.body-bannar{
+        margin-top: 125px;
+    }
     .box-boder{
         border-right: none;
     }
     .logo img{
         width: 20%
+    }
+    .single-slide{
+        position: relative;
+        height: 60vh;
     }
     .content-text{
         display: block;
@@ -248,20 +290,23 @@
     .social-like .social-icon:nth-child(2n+2){
         border-right:none;
     }
+    .right-col {
+        margin-left: 0;
+    }
     .right-col p {
         margin-left: 0;
-        font-size: 15px;
+        font-size: 16px;
     }
     .right-col ul.item-name{
-        font-size: 15px;
+        font-size: 16px;
     }
     .right-col .item-name span {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
         display: block;
     }
     .right-col .item-name i{
-        font-size: 7px;
+        font-size: 8px;
         text-align: center;
         margin: 0 8px;
         color: rgb(140, 165, 172);
@@ -269,20 +314,17 @@
     .alignleft {
         margin-right: 0;
     }
-    .social-area .social-icon {
-        border-right:none;
-    }
+ 
     .social-area{
         margin: 0 auto;
     }
-
     .section-title h3{
         font-size: 20px;
     }
     .social-like .row{
         display: grid;
         grid-template-columns: auto auto ;
-        row-gap: 10px;
+        row-gap:10px;
         text-align: center;
     }
     .slide-area .owl-nav {
@@ -290,6 +332,18 @@
     }
     #myBtn{
         bottom: 90px;
+    }
+    .about{
+        padding-top: 0;
+    }
+    .sub-footer{
+        font-size: 14px;
+    }
+    .footer-area p{
+        font-size: 16px;
+    }
+    .footer-area .head-line{
+        font-size: 18px;
     }
 
     
