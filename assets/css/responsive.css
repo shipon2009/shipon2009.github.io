@@ -1,5 +1,8 @@
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    .logo img{
+        width: 60%
+    }
     .sub-header{
         font-size: 12px;
     }
@@ -13,6 +16,9 @@
 }
 /* Tablet & mobile Layout: 768px. */
 @media only screen and (max-width: 991px) { 
+    .logo img{
+        width: 70%
+    }
     .sub-header{
         font-size: 12px;
     }
@@ -35,6 +41,9 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .logo img{
+        width: 70%
+    }
     .sub-header .container .row{
         display: flex;
         justify-content: center;
@@ -106,6 +115,9 @@
     }
     .box-boder{
         border-right: none;
+    }
+    .bannar img {
+        height: 2rem;
     }
     .logo img{
         width: 20%
@@ -235,6 +247,9 @@
     }
     .box-boder{
         border-right: none;
+    }
+    .bannar img {
+        height: 2rem;
     }
     .logo img{
         width: 20%

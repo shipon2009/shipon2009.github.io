@@ -3,7 +3,6 @@
 
     jQuery(document).ready(function($){
         $(".slide-area").owlCarousel({
-            
             items:1,
             margin:10,
             loop:true,
@@ -11,11 +10,6 @@
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
             dots:true,
             autoplay:false,
-        //    autoplayTimeout: 3500,
-        //    autoplaySpeed: 800,
-            
-        //    animateIn:'slideInLeft',
-
         });
 
         $(".logo-carousel").owlCarousel({
@@ -54,20 +48,46 @@
             autoplayHoverPause: true,
         });
 
-        // $(".pro-gal-area").masonry({
-        //     itemSelector: '.product-img',
-        //     columnWidth: 200
-        // })
-
-
     });
-    
-    // jQuery(window).load(function(){
-
-               
-    // });
-
-
-    
-
+  
 }(jQuery));	
+
+
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    // Facebook Chat Button script
+    var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "102606781581158");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v10.0'
+            });
+            };
+        
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));

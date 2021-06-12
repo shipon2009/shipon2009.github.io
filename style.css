@@ -60,22 +60,27 @@ body{
 .slidebg-4{background:url(assets/image/slidebg4.jpg);}
 .slidebg-5{background:url(assets/image/slidebg5.jpg);}
 .slidebg-6{background:url(assets/image/slidebg6.jpg);}
+.slidebg-7{background:url(assets/image/slidebg7.jpg);}
 /******************/
 header.header{
     position: fixed;
     width: 100%;
-    z-index: 22;
     top: 0;
     border-bottom: 3px solid #1A1DAA;
+    z-index: 99;
 }
 section.body-bannar{
-    margin-top: 152px;
+    margin-top: 135px;
 }
 .logo img{
-    width: 35%
+    width: 40%
 }
 .bannar img {
+    display: inline-block;
+    height: 5rem;
+    width: auto;
     margin-bottom: 18px;
+    text-align: center;
 }
 .content-area{
     left: 0;
@@ -458,7 +463,7 @@ section.body-bannar{
     margin: 20px 0;
 }
 .footer-logo{
-    width: 30%;
+    width: 22%;
     margin: 20px 0 15px 0;
 }
 .footer-title{
@@ -591,7 +596,10 @@ form {
 }
 
 #loader{
+    position: absolute;
     background: #E5EFF1 url(assets/image/loader.gif) no-repeat center center;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -618,7 +626,7 @@ a.btn-home{
     font-size: 15px;
     font-weight: 500;
     border: none;
-    background: #3b5998;
+    background: #1A7CBF;
     padding: 10px 20px;
     color: #fff;
     cursor: pointer;
@@ -628,7 +636,15 @@ a.btn-home{
 a.btn-home:hover{
     background: #262727;
 }
-.logo{
-    width: 15%
+.logo2{
+    width: 12%;
+    margin-bottom: 20px;
+}
+.center-box{
+    background: linear-gradient(rgba(49, 34, 255, 0.5),rgba(255,255,255,.5)), url(assets/image/16293.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 /* thank you css end*/
