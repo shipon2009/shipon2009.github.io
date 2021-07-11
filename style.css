@@ -66,20 +66,19 @@ header.header{
     position: fixed;
     width: 100%;
     top: 0;
-    border-bottom: 3px solid #1A1DAA;
+    border-bottom: 4px solid #1A1DAA;
     z-index: 99;
 }
 section.body-bannar{
-    margin-top: 135px;
+    margin-top: 120px;
 }
 .logo img{
     width: 40%
 }
 .bannar img {
-    display: inline-block;
     height: 5rem;
     width: auto;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     text-align: center;
 }
 .content-area{
@@ -94,10 +93,9 @@ section.body-bannar{
 }
 .menu-bar{
     display: block;
-    background: rgba(17, 13, 13, 0.788);
+    background: #1A1DAA;
     width: 50px;
     height: 50px;
-    opacity: 80%;
 }
 .menu-bar .fas{
     line-height: 50px;
@@ -128,10 +126,14 @@ section.body-bannar{
 .single-slide{
     position:relative;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: .4;
+}
+.active .single-slide{
+    opacity: 1;
 }
 .black-bg{
     position: absolute;
@@ -149,7 +151,7 @@ section.body-bannar{
     padding: 20px 50px;
 }
 .slide-area button.owl-dot {
-    background: #fff;
+    background: #c4ecf8;
     height: 10px;
     width: 10px;
     margin-left: 10px;
@@ -164,14 +166,14 @@ section.body-bannar{
 }
 .slide-area .owl-dots {
     position: absolute;
-    bottom: 6px;
-    right: 10px;
+    bottom: 15px;
+    right: 15%;
 }
 .slide-area .owl-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 60px;
+    font-size: 40px;
     color: #262727;
     width: 100%;
     left: 5%;
@@ -204,8 +206,7 @@ section.body-bannar{
 }
 .about{
     display: block;
-    /* background: rgb(225, 227, 230); */
-    background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,240,.7)), url(assets/image/16293.jpg);
+    background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,240,.7)), url(assets/image/page-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -317,7 +318,6 @@ section.body-bannar{
     display: grid;
     grid-template-columns: auto auto auto auto ;
     text-align: center;
-    /* margin: 5px 0; */
 }
 .social-like .social-icon{
     display: flex;
@@ -332,9 +332,9 @@ section.body-bannar{
     border-right:none;
 }
 .social-icon i{
-    margin-right: 20px;
+    margin: 10px 10px;
 }
-.social-icon .counter{
+.social-icon .countfect{
     font-weight: 500;  
 }
 .social-icon .fa-facebook{
@@ -356,19 +356,71 @@ section.body-bannar{
     column-count: 4;
     column-gap: 1em;
 }
+.product-img{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 .product-img img{
-    background-color: #eee;
+    background-color: rgb(190, 190, 190);
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
-    transition: .2s;
+    /* transition:all 0.25s ease; */
+    transition: .3s ease-in-out;
 }
-.product-img:hover{
-    transform: scale(1.09);
+.product-img:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
-/* product-glarry-end */
-/* Brand-logo css start */
+/*********************************/
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
+
+/******************************/
+/* .product-img{
+    position: relative;
+}
+.product-hover{
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.hover-text{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.product-img:hover .product-hover{
+    height: 50%;
+    transform: scale(1.08);
+  } */
+/* product-glarry-end */
+
+/* Brand-logo css start */
 .brand-logo{
     background: #c4ecf8;
 }
@@ -383,23 +435,40 @@ section.body-bannar{
     display: block;
     margin-bottom: 80px;
 }
+
 .logo-carousel .owl-nav {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 35px;
-    color: rgb(92, 207, 241);
-    width: 95%;
+    color: rgb(15, 39, 46);
+    width: 15%;
     opacity: 0.2;
     transition: all 0.5ms ease 0s;
-    left: 2.5%;
 }
+
 .logo-carousel:hover .owl-nav {
     opacity: .6;
 }
 .logo-carousel button.owl-next {
     position: absolute;
     right: 0;
+}
+.logo-carousel .owl-dots{
+    text-align: center;
+    
+}
+.logo-carousel button.owl-dot{
+    background: rgb(178, 178, 179);
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.logo-carousel button.owl-dot.active{
+    background: rgb(106, 106, 255);
+    height: 12px;
+    width: 12px;
 }
 /* Brand-logo css end */
 
@@ -419,10 +488,12 @@ section.body-bannar{
 .quote{
     display: inline-block;
     margin: 50px 0;
+    width: 50px;
     text-align: center;
 }
 .testi-client img{
-    display: inline-block;
+    display: block;
+    width: 100px;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 30px;
@@ -432,9 +503,6 @@ section.body-bannar{
     display: inline-block;
     width: 80px;
 }
-/* .testi-text{
-    /* font-family: 'Rufina', serif; 
-} */
 .testi-client span{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -473,32 +541,27 @@ section.body-bannar{
 .footer-area a{
     text-decoration: none;
 }
-
 .footer-area h5{
     color:rgb(27, 38, 104)
 }
-
 .footer-area ul{
     list-style: none;
     padding-left: 0;
 }
-
 .footer-area ul li{
     display: inline-block;
     margin: 0 5px;
     font-size: 30px;
     text-align: center;
 }
-
 .footer-area ul li a{
     display: inline-block;
     color: rgb(24, 24, 24);
 
 }
-.footer-area ul li a:hover{
+/* .footer-area ul li a:hover{
     opacity: .8;
-}
-
+} */
 .footer-area li{
     list-style: none;
 }
@@ -507,18 +570,15 @@ section.body-bannar{
     color: rgb(24, 24, 24);
     margin-bottom: 10px;
 }
-
 .footer-area a.contact {
     line-height: 2;
 }
-
 .footer-area a.contact i{
     margin-right: 10px;
 }
 .footer-area a:hover{
     color: steelblue;
 }
-
 #email{
     position: relative;
     display: inline-block;
@@ -527,8 +587,17 @@ section.body-bannar{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     border: none;
-    border: 1px solid #3b5998;
+    border: 1px solid #c2c2c2;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
 }    
+#email:focus{
+    /* box-shadow: 0 0 5px 1px #3cbbee ; */
+    border: 1px solid #3cbbee;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
 
 button[type=submit]{
     position: absolute;
@@ -538,18 +607,14 @@ button[type=submit]{
     background: rgb(25, 0, 255);
     color: #fff;
     border: none;
-    
 }
-
 button[type=submit]:hover{
     background: darkblue;
 }
-
 form {
     text-align: center;
     transform: translateX(-9%);
 }
-
 .news{
     margin-top: 20px;
 }
@@ -558,7 +623,6 @@ form {
     color: #fff;
     padding: 10px 0;
 }
-
 .sub-footer p a{
     color: #fff;
     text-decoration: none;
@@ -566,11 +630,9 @@ form {
 .sub-footer p a:hover{
     color: aquamarine;
 }
-
 .sub-footer .text-right p{
     float: right;
 }
-
 /* footer-area-end */
 
 /* scroll-top start */
@@ -590,11 +652,9 @@ form {
     cursor: pointer; 
     font-size: 30px; 
 }
-  
 #myBtn:hover {
     background-color: rgb(59, 56, 56); 
 }
-
 #loader{
     position: absolute;
     background: #E5EFF1 url(assets/image/loader.gif) no-repeat center center;
@@ -605,9 +665,7 @@ form {
     position: fixed;
     z-index: 999;
 }
-
 /**** Thank you section css start***/
-
 .center-box{
     width: 80%;
     height: 100vh;
@@ -621,7 +679,6 @@ form {
     text-align: center;
     font-size: 20px;
 }
-
 a.btn-home{
     font-size: 15px;
     font-weight: 500;
@@ -632,19 +689,71 @@ a.btn-home{
     cursor: pointer;
     text-decoration: none;
 }
-
 a.btn-home:hover{
-    background: #262727;
+    background: #2A2755;
 }
 .logo2{
     width: 12%;
     margin-bottom: 20px;
 }
 .center-box{
-    background: linear-gradient(rgba(49, 34, 255, 0.5),rgba(255,255,255,.5)), url(assets/image/16293.jpg);
+    background: linear-gradient(rgba(49, 34, 255, 0.5),rgba(255,255,255,.5)), url(assets/image/page-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
 /* thank you css end*/
+/* <i class="fas fa-times"></i> */
+#menu-area{
+    display: none;
+    background-color: #262727;
+    position: absolute;
+    width: 15%;
+    height: 100vh;
+    right: 0;
+    text-align: center;
+    margin: 4px 0 0 0 ;
+    transition: width .3s;
+}
+#menu-area ul{
+    margin: auto auto;
+    padding: 0;
+}
+#menu-area ul li{
+    display: block;
+    list-style: none;
+    margin: 20px auto;
+}
+#menu-area ul li a{
+    text-decoration: none;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+#menu-area ul li a:hover{
+    color: #929090;
+}
+.menu-bar:hover {
+    background-color: black;
+}
+
+img.single-brand{
+    filter: grayscale(100%);
+}
+
+img.single-brand:hover{
+    filter: grayscale(0);
+}
+
+.footer-area .social-icon i{
+    filter: grayscale(100%);
+}
+
+.footer-area .social-icon i:hover{
+    filter: grayscale(0);
+}

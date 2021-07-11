@@ -4,12 +4,23 @@
     jQuery(document).ready(function($){
         $(".slide-area").owlCarousel({
             items:1,
-            margin:10,
+            margin:0,
             loop:true,
             nav:true,
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
             dots:true,
             autoplay:false,
+            responsive:{
+                0:{
+                    stagePadding:0,
+                },
+                600:{
+                    stagePadding:100,
+                },
+                1320:{
+                    stagePadding:200,
+                },
+            }
         });
 
         $(".logo-carousel").owlCarousel({
@@ -48,6 +59,13 @@
             autoplayHoverPause: true,
         });
 
+        $('.pro-gal-area').magnificPopup({
+            delegate: 'a',
+            type:'image',
+            gallery:{enabled:true},
+    
+        });
+
     });
   
 }(jQuery));	
@@ -75,19 +93,60 @@
 
     // Facebook Chat Button script
     var chatbox = document.getElementById('fb-customer-chat');
-            chatbox.setAttribute("page_id", "102606781581158");
-            chatbox.setAttribute("attribution", "biz_inbox");
-            window.fbAsyncInit = function() {
-            FB.init({
-                xfbml            : true,
-                version          : 'v10.0'
-            });
-            };
+        chatbox.setAttribute("page_id", "102606781581158");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+        });
+        };
         
-            (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    // function myFunction() {
+    //     var x = document.getElementById("menu-area");
+    //     if (x.style.display === "block"){
+    //     x.style.display = "none";
+    //     } else {
+    //     x.style.display = "block";
+    //     }
+    // }
+
+    //Lazy Load Function for image
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyloadImages = document.querySelectorAll("img.lazy");    
+        var lazyloadThrottleTimeout;
+        
+        function lazyload () {
+          if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }    
+          
+          lazyloadThrottleTimeout = setTimeout(function() {
+              var scrollTop = window.pageYOffset;
+              lazyloadImages.forEach(function(img) {
+                  if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                  }
+              });
+              if(lazyloadImages.length == 0) { 
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+              }
+          }, 20);
+        }
+        
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+      });
