@@ -70,7 +70,7 @@
     // Sticky_header js start
     $(window).scroll(function() 
         {
-        if ($(this).scrollTop() > 1)
+        if ($(this).scrollTop() > 10)
         {
         $('.header').addClass("sticky_header");
         }
