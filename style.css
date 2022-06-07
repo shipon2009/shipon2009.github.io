@@ -98,7 +98,7 @@ header.header{
     left: 50%;
     right: 0;
     top: 0;
-    width: 90%;
+    width: 85%;
     margin-top: 20px;
     transform: translate(-50%);
     border-radius: 50px;
@@ -112,8 +112,8 @@ header.header{
 }
 
 header.header.sticky_header{
-    background: var(--purple);
-    box-shadow: 1px 1px 1rem rgb(88, 88, 88);
+    background: var(--black);
+    /* box-shadow: 1px 1px 1rem rgb(88, 88, 88); */
 }
 /* section.body-bannar{
     margin-top: 7.3rem;
@@ -206,8 +206,8 @@ header.header.sticky_header{
 
 /* Menu Bar area for mobile*/
 #menu-btn{
-    font-size: 2rem;
-    color:#0E225A;
+    font-size: 1.5rem;
+    color:var(--white);
     cursor: pointer;
     display: none;
 }

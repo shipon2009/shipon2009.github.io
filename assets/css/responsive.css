@@ -45,7 +45,7 @@
         bottom: 90px;
     }
     section.body-bannar{
-        margin-top: 7rem;
+        /* margin-top: 7rem; */
     }
     .single-slide{
         position: relative;
@@ -200,7 +200,7 @@
         padding: 10px 0;
     }
     section.body-bannar{
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
     .box-boder{
         border-right: none;
@@ -208,9 +208,10 @@
     .main-header .bannar a{
         font-size: 2rem;
     }
-    .logo img{
-        width: 25%
+    .main-header .logo img{
+        width: 15%
     }
+    
     .menu-bar{
         display: block;
     }
