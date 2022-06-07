@@ -102,7 +102,8 @@ header.header{
     margin-top: 20px;
     transform: translate(-50%);
     border-radius: 50px;
-    background:var(--orange);
+    background:transparent;
+    /* background:var(--orange); */
     /* opacity: 1; */
     color: white;
     z-index: 999;
