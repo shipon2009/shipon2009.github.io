@@ -18,7 +18,7 @@
 }
 
 html{
-    scroll-padding-top: 5rem ;
+    scroll-padding-top: 5.5rem ;
 }
 
 ::-webkit-scrollbar {
@@ -113,6 +113,7 @@ header.header.sticky_header{
     background: var(--black);
     border: 2px solid var(--orange);
     box-shadow: 0px 3px 1rem 1px rgb(179 179 179);
+    /* opacity: .8; */
 }
 
 .main-header{
@@ -193,7 +194,7 @@ header.header.sticky_header{
     width: 0;
     height: 2px;
     bottom: -8px;
-    background: var(--white);
+    background: var(--orange);
     transition: all .5s;
 }
 .navbar ul li a:hover::before{
@@ -263,9 +264,9 @@ header.header.sticky_header{
     padding: 20px 50px;
 }
 .slide-area button.owl-dot {
-    background: var(--black);
-    height: 15px;
-    width: 15px;
+    background: var(--orange);
+    height: 10px;
+    width: 10px;
     margin-left: 10px;
     border-radius: 50%;
     display: inline;
@@ -471,26 +472,13 @@ header.header.sticky_header{
     border: 2px solid var(--orange);
     /* background-color: var(--yellow);*/
 } 
-.status-icon .countfect{
-    font-weight: 300;
-}
-/*
-.status-icon .fa-facebook{
-    color: #3b5998;
-}
-.status-icon .fa-twitter{
-    color: #00acee;
-}
-.social-icon .fa-pinterest{
-    color: #E60023;
-}
-.status-icon .fa-instagram{
-    color: #8a3ab9;
-}
-*/
 /* .social-icon span{
     width: 100px;
 } */
+.status-icon .countfect{
+    font-weight: 300;
+}
+
 /* social area end */
 
 /* product-glarry-start */
@@ -709,6 +697,20 @@ header.header.sticky_header{
 .footer-area a:hover{
     color: rgb(47, 74, 192);
 }
+
+.social-icon .fa-facebook{
+    color: #3b5998;
+}
+.social-icon .fa-twitter{
+    color: #00acee;
+}
+.social-icon .fa-pinterest{
+    color: #E60023;
+}
+.social-icon .fa-instagram{
+    color: #8a3ab9;
+}
+
 #email{
     position: relative;
     display: inline-block;
@@ -878,11 +880,38 @@ img.single-brand:hover{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--red);
+    background-color: var(--orange);
     color: white;
     cursor: pointer;
     font-size: 30px;
 }
 #myBtn:hover {
-    background-color: var(--blue);
+    background-color: var(--black);
+}
+.product-img{
+    position: relative;
+}
+.hover-text{
+    display: block;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: var(--black);
+    color: white;
+    bottom: -100%;
+    text-align: center;
+    padding: 10px 20px;
+    opacity: .8;
+}
+.hover-text button{
+    padding: 5px 20px;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 5px;
+}
+.hover-text button:hover{
+    background: var(--red);
+}
+.product-img:hover .hover-text{
+    bottom: 0;
 }
