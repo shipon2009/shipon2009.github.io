@@ -470,8 +470,13 @@ header.header.sticky_header{
     height: 75px;
     border-radius: 50%;
     border: 2px solid var(--orange);
+    transition: all .8s ease-in-out;
     /* background-color: var(--yellow);*/
 } 
+.status-icon i:hover{
+    background-color: var(--purple);
+    color: var(--white);
+}
 /* .social-icon span{
     width: 100px;
 } */
@@ -894,14 +899,18 @@ img.single-brand:hover{
 .hover-text{
     display: block;
     position: absolute;
-    height: 50%;
+    height: 60%;
     width: 100%;
+    text-align: center;
     background: var(--black);
     color: white;
     bottom: -100%;
-    text-align: center;
     padding: 10px 20px;
     opacity: .8;
+    transition: all .6s ease-in-out;
+}
+.product-img:hover .hover-text{
+    bottom: 0;
 }
 .hover-text button{
     padding: 5px 20px;
@@ -911,7 +920,4 @@ img.single-brand:hover{
 }
 .hover-text button:hover{
     background: var(--red);
-}
-.product-img:hover .hover-text{
-    bottom: 0;
 }
