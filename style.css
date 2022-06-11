@@ -29,7 +29,7 @@ html{
     border-radius: 10px;
     width: 5px;
     background: linear-gradient(45deg, var(--red), var(--orange));
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), 
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
     inset -2px -2px -2px rgba(0, 0, 0, 0.25);
 }
 
@@ -61,7 +61,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-weight: 700; 
+    font-weight: 700;
 }
 p:last-child {
     margin-bottom: 0
@@ -151,7 +151,7 @@ header.header.sticky_header{
 .logo{
     display: flex;
     align-items: center;
-    
+
 }
 .main-header .logo img{
     width: 3rem;
@@ -199,7 +199,7 @@ header.header.sticky_header{
 }
 .navbar ul li a:hover::before{
     width: 100%;
-    
+
 }
 
 /* Menu Bar area for mobile*/
@@ -322,7 +322,7 @@ header.header.sticky_header{
 }
 .about{
     display: block;
-    background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,240,.7)), url(assets/image/page-bg.jpg);
+    background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,240,.7)); /*, url(assets/image/page-bg.jpg)*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -472,7 +472,7 @@ header.header.sticky_header{
     border: 2px solid var(--orange);
     transition: all .8s ease-in-out;
     /* background-color: var(--yellow);*/
-} 
+}
 .status-icon i:hover{
     background-color: var(--purple);
     color: var(--white);
@@ -490,9 +490,10 @@ header.header.sticky_header{
 .pro-gal-area{
     column-count: 4;
     column-gap: 1em;
+    margin-bottom: 20px;
 }
 .product-img{
-    /* border: 1px solid #000; */
+    /* border: 2px solid rgb(196, 196, 196); */
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -525,7 +526,10 @@ header.header.sticky_header{
 
 /* Brand-logo css start */
 .brand-logo{
-    background: rgb(221, 255, 246);
+    /* background: rgb(221, 255, 246); */
+    background: linear-gradient(rgba(255,255,255,.9),rgba(240,255,246,.7)), url(assets/image/page-bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .brand-logo .single-brand{
     background: #fff;
@@ -574,6 +578,25 @@ header.header.sticky_header{
     height: 12px;
     width: 12px;
 }
+img.single-brand{
+    filter: grayscale(100%);
+    transition: filter 2s;
+}
+
+img.single-brand:hover{
+    filter: grayscale(0);
+}
+
+.footer-area .social-icon i{
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+
+.footer-area .social-icon i:hover{
+    filter: grayscale(0);
+}
+
+
 /* Brand-logo css end */
 
 /* testimonial section start */
@@ -603,7 +626,7 @@ header.header.sticky_header{
     margin-bottom: 30px;
     margin-top: 20px;
     position: relative;
-    
+
 }
 .testimonial .owl-carousel .owl-item img {
     display: inline-block;
@@ -820,25 +843,6 @@ a.btn-home:hover{
 /* thank you css end*/
 
 
-img.single-brand{
-    filter: grayscale(100%);
-    transition: filter 2s;
-}
-
-img.single-brand:hover{
-    filter: grayscale(0);
-}
-
-.footer-area .social-icon i{
-    filter: grayscale(100%);
-    transition: filter 1s;
-}
-
-.footer-area .social-icon i:hover{
-    filter: grayscale(0);
-}
-
-
 /* footer area close */
 
 .product-info{
@@ -897,11 +901,12 @@ img.single-brand:hover{
     position: relative;
 }
 .hover-text{
-    display: block;
+    display: flex;
     position: absolute;
     height: 60%;
     width: 100%;
     text-align: center;
+    align-items: center;
     background: var(--black);
     color: white;
     bottom: -100%;
@@ -913,7 +918,7 @@ img.single-brand:hover{
     bottom: 0;
 }
 .hover-text button{
-    padding: 5px 20px;
+    padding: 10px 20px;
     background: var(--orange);
     color: var(--white);
     border-radius: 5px;
