@@ -577,14 +577,25 @@ header.header.sticky_header{
     height: 12px;
     width: 12px;
 }
-img.single-brand{
+/* new code add*/
+.logo-carousel .owl-item.center img{
+    -webkit-filter: none; 
+    filter: none;
+}
+  
+.logo-carousel .owl-item img{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+/* img.single-brand{
     filter: grayscale(100%);
     transition: filter 2s;
 }
 
-img.single-brand:hover{
+img.single-brand.active{
     filter: grayscale(0);
-}
+} */
 
 .footer-area .social-icon i{
     filter: grayscale(100%);

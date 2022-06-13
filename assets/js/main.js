@@ -24,13 +24,14 @@
         });
 
         $(".logo-carousel").owlCarousel({
+            center:true,
             margin:10,
             loop:true,
             nav:true,
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
-            dots:true,
+            dots:false,
             autoplay:true,
-						autoplayHoverPause: true,
+			autoplayHoverPause: true,
             responsive:{
                 0:{
                     items:2,
