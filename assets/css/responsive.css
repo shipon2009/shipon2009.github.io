@@ -9,9 +9,9 @@
     #myBtn{
         bottom: 90px;
     }
-    section.body-bannar{
-        margin-top: 7rem;
-    }
+    /* section.body-bannar{
+        margin-top: 5rem;
+    } */
 
     html{
         font-size: 90%;
@@ -44,9 +44,9 @@
     #myBtn{
         bottom: 90px;
     }
-    section.body-bannar{
-        /* margin-top: 7rem; */
-    }
+    /* section.body-bannar{
+        margin-top: 5rem;
+    } */
     .single-slide{
         position: relative;
         height: 70vh;
@@ -60,21 +60,22 @@
         transform:rotate(180deg);
     }
 
-    .header .navbar{
+    .navbar{
         position: absolute;
         top:99%; left:0; right:0;
-        background:black;
+        background:#fff;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .header .navbar.active{
+    .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .header .navbar ul li{
+    .navbar ul li{
         display: block;
         text-align: center;
         transition: all 2s;
+        margin: 10px 0;
     }
     html{
         scroll-padding-top: 5.5rem;
@@ -109,9 +110,9 @@
     .main-header .logo a{
         font-size: 3.5rem;
     }
-    section.body-bannar{
-        margin-top: 7rem;
-    }
+    /* section.body-bannar{
+        margin-top: 5rem;
+    } */
     .single-slide{
         position: relative;
         height: 70vh;
@@ -140,14 +141,14 @@
     .pro-gal-area{
         column-count: 3;
     }
-    .social-like .status-icon{
+    .social-like .social-icon{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         font-size: 20px;
     }
-    .status-icon i {
+    .social-icon i {
         margin: 0 12px;
         font-size: 26px;
     }   
@@ -158,7 +159,7 @@
         text-align: center;
         margin: 5px 0;
     }
-    .social-like .status-icon:nth-child(2n+2){
+    .social-like .social-icon:nth-child(2n+2){
         border-right:none;
     }
     .logo-carousel .owl-nav {
@@ -186,32 +187,34 @@
     html{
         scroll-padding-top: 5rem;
     }
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
     .main-header .logo a{
         display: none;
     }
     .sub-header{
         display: none;
     }
-    .sub-head{
+    /* .sub-head{
         display: flex;
         flex-direction: column;
-    }
-    .header{
+    } */
+    /* .header{
         padding: 10px 0;
-    }
-    section.body-bannar{
-        /* margin-top: 80px; */
-    }
+    } */
+    /* section.body-bannar{
+        margin-top: 5rem;
+    } */
     .box-boder{
         border-right: none;
     }
     .main-header .bannar a{
         font-size: 2rem;
     }
-    .main-header .logo img{
-        width: 15%
+    .logo img{
+        width: 25%
     }
-    
     .menu-bar{
         display: block;
     }
@@ -258,25 +261,11 @@
     .sub-footer .col-md-6{
         text-align: center;
     }
-    .social-like .status-icon{
+    .social-like .social-icon{
         font-size: 20px;
         border-right: 2px solid grey;
     }
-    .social-like .status-icon i{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 2px solid var(--orange);
-    }
-    .social-like .status-icon span {
-        font-size: 15px;
-        font-weight: 400;
-    }
-    
-    .social-like .sstatus-icon:nth-child(2n+2){
+    .social-like .social-icon:nth-child(2n+2){
         border-right:none;
     }
     .right-col {
@@ -319,7 +308,7 @@
         row-gap:2px;
         text-align: center;
     }
-    .status-icon span {
+    .social-icon span {
         width: 60px;
     }
     .slide-area .owl-nav {
@@ -347,19 +336,23 @@
     html,body{
         overflow-x: hidden;
     }
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
     .sub-header{
         display: none;
     }
-    .sub-head{
+
+    /* .sub-head{
         display: flex;
         flex-direction: column;
-    }
-    .header{
+    } */
+    /* .header{
         padding-top: 20px;
-    }
-    section.body-bannar{
-        margin-top: 6.5rem;
-    }
+    } */
+    /* section.body-bannar{
+        margin-top: 5rem;
+    } */
 
     .box-boder{
         border-right: none;
@@ -413,20 +406,11 @@
     .sub-footer .col-md-6{
         text-align: center;
     }
-    .social-like .status-icon{
+    .social-like .social-icon{
         font-size: 20px;
         border-right: 2px solid grey;
     }
-    .social-like .status-icon i{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 2px solid var(--orange);
-    }
-    .social-like .status-icon:nth-child(2n+2){
+    .social-like .social-icon:nth-child(2n+2){
         border-right:none;
     }
     .right-col {
@@ -466,7 +450,7 @@
         row-gap:5px;
         text-align: center;
     }
-    .status-icon span {
+    .social-icon span {
         width: 60px;
     }
     .slide-area .owl-nav {

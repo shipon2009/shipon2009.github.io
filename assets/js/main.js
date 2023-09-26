@@ -10,28 +10,27 @@
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
             dots:true,
             autoplay:true,
-        //    responsive:{
-        //        0:{
-        //            stagePadding:0,
-        //        },
-        //        600:{
-        //            stagePadding:100,
-        //        },
-        //        1320:{
-        //            stagePadding:150,
-        //        },
-        //    }
+            responsive:{
+                0:{
+                    stagePadding:0,
+                },
+                600:{
+                    stagePadding:100,
+                },
+                1320:{
+                    stagePadding:150,
+                },
+            }
         });
 
         $(".logo-carousel").owlCarousel({
-            center:true,
             margin:10,
             loop:true,
             nav:true,
             navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
-            dots:false,
+            dots:true,
             autoplay:true,
-			autoplayHoverPause: true,
+						autoplayHoverPause: true,
             responsive:{
                 0:{
                     items:2,
@@ -71,13 +70,13 @@
     // Sticky_header js start
     $(window).scroll(function() 
         {
-        if ($(this).scrollTop() > 10)
+        if ($(this).scrollTop() > 1)
         {
-        $('.header').addClass("sticky_header");
+        $('.nav-header').addClass("sticky_header");
         }
         else
         {
-        $('.header').removeClass("sticky_header");
+        $('.nav-header').removeClass("sticky_header");
         }
         });
 
@@ -85,24 +84,7 @@
 
 }(jQuery));
 
-    // Facebook Chat Button script
-    var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "102606781581158");
-        chatbox.setAttribute("attribution", "biz_inbox");
-        window.fbAsyncInit = function() {
-        FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-        });
-        };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
 
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
     let menu = document.querySelector('#menu-btn');
@@ -170,3 +152,22 @@
         window.addEventListener("resize", lazyload);
         window.addEventListener("orientationChange", lazyload);
       });
+
+    // Facebook Chat Button script
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "102606781581158");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function() {
+    FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
